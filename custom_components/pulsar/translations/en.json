@@ -1,0 +1,17 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Настройка Pulsar",
+        "data": {
+          "port": "Порт",
+          "update_interval": "Интервал обновления (сек)"
+        },
+        "error": {
+          "invalid_usb_port": "Пожалуйста, укажите корректный порт.",
+          "invalid_update_interval": "Интервал обновления должен быть больше 0."
+        }
+      }
+    }
+  }
+}

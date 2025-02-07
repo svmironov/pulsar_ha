@@ -1,0 +1,12 @@
+{
+  "domain": "pulsar",
+  "name": "Pulsar",
+  "documentation": "https://github.com/svmironov/pulsar_ha",
+  "issue_tracker": "https://github.com/svmironov/pulsar_ha/issues",
+  "dependencies": [],
+  "codeowners": ["@svmironov"],
+  "iot_class": "Local Polling",
+  "config_flow": true,
+  "requirements": ["meterbus>=0.3.4"],
+  "version": "1.0.0"
+}
