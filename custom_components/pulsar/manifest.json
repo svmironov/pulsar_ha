@@ -7,6 +7,6 @@
   "codeowners": ["@svmironov"],
   "iot_class": "Local Polling",
   "config_flow": true,
-  "requirements": ["meterbus>=0.3.4"],
+  "requirements": ["pymeterbus>=0.8.4"],
   "version": "1.0.0"
 }

@@ -9,7 +9,7 @@ from homeassistant.components.sensor import (
     SensorEntity,
     SensorEntityDescription,
     SensorDeviceClass,
-    STATE_CLASS_MEASUREMENT,
+    SensorStateClass,
 )
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
@@ -24,35 +24,35 @@ SENSOR_TYPES = (
         name="Energy",
         native_unit_of_measurement="MWh",
         device_class=SensorDeviceClass.ENERGY,
-        state_class=STATE_CLASS_MEASUREMENT,
+        state_class=SensorStateClass.MEASUREMENT,
     ),
     SensorEntityDescription(
         key="volume",
         name="Volume",
         native_unit_of_measurement="m³",
         device_class=SensorDeviceClass.VOLUME,
-        state_class=STATE_CLASS_MEASUREMENT,
+        state_class=SensorStateClass.MEASUREMENT,
     ),
     SensorEntityDescription(
         key="flow_rate",
         name="Flow Rate",
         native_unit_of_measurement="m³/h",
         icon="mdi:water-pump",
-        state_class=STATE_CLASS_MEASUREMENT,
+        state_class=SensorStateClass.MEASUREMENT,
     ),
     SensorEntityDescription(
         key="temp_in",
         name="Temperature In",
         native_unit_of_measurement="°C",
         device_class=SensorDeviceClass.TEMPERATURE,
-        state_class=STATE_CLASS_MEASUREMENT,
+        state_class=SensorStateClass.MEASUREMENT,
     ),
     SensorEntityDescription(
         key="temp_out",
         name="Temperature Out",
         native_unit_of_measurement="°C",
         device_class=SensorDeviceClass.TEMPERATURE,
-        state_class=STATE_CLASS_MEASUREMENT,
+        state_class=SensorStateClass.MEASUREMENT,
     ),
 )
 
