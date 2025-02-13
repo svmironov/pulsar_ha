@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import meterbus
 import serial
+import logging
 from datetime import timedelta
 
 from homeassistant.components.sensor import (
@@ -61,7 +62,7 @@ class PulsarDataCoordinator(DataUpdateCoordinator):
     def __init__(self, hass: HomeAssistant, port: str, update_interval: int) -> None:
         super().__init__(
             hass,
-            logger=None,
+            logger=logging.getLogger(__name__),
             name="Pulsar Sensor",
             update_interval=timedelta(seconds=update_interval),
         )
